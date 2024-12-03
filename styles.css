@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5%;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+.nav {
+  max-width: 50%;
+  margin: auto;
+  padding: 16px;
+}
+body footer {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+article p, article h2 {
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+h1, h2, h3, h5 {
+  padding: 12px;
+}
+.nav .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0A0A0A;
+  background-color: #FAFAFE; /* Adjust color as needed */
+  margin: auto;
+  box-shadow: 0px 1px 3px 1px rgba(95, 99, 104, 0.25);
+}
+#contact-me {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #FAFAFE;
+  background-color: #0049E6; /* Adjust color as needed */
+  margin: auto;
+  box-shadow: 0px 1px 3px 1px rgba(95, 99, 104, 0.25);
+}
+#home-image {
+  width: 50%;
+  max-height: 65vh;
+  margin: auto;
+  position: relative;
+}
+
+.img-txt {
+  position: absolute;
+  width: 80%;
+  bottom: 5%;
+  color: #FAFAFE;
+}
+img {
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 1px 3px 1px rgba(95, 99, 104, 0.25)
+}
+.contact-cta {
+  display: flex;
+  margin: auto;
+  padding: 1%;
+}
+#about-image {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  justify-content: center;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+body {
+  width: 100%;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, #0A0A0A 0%, #540051 25%, #8E0089 50%, #E600DF 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+}
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*White Text*/
+.front-page {
+  color: #FAFAFE;
+}
+.paper {
+  background-color: white;
+  margin: 5%;
+  padding: 16px;
+  box-shadow: 0px 2px 5px 2px rgba(95, 99, 104, 0.25);
+}
+
+
+#projects-page .lbl-txt {position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); color: #FAFAFE; text-align:center; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 600px) {
+	.nav{
+		color: crimson;
+		background-color: aqua;
+	}
+}
+	
+	
+

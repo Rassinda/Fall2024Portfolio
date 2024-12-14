@@ -9,8 +9,11 @@
   justify-content: center;
   margin: auto;
 }
+.menu-proj {
+  padding: 0;
+}
 .nav {
-  max-width: 50%;
+  width: 65%;
   margin: auto;
   padding: 16px;
 }
@@ -37,10 +40,9 @@ h1, h2, h3, h5 {
   cursor: pointer;
   font-size: 16px;
   color: #0A0A0A;
-  background-color: #FAFAFE; /* Adjust color as needed */
-  margin: auto;
+  background-color: #FAFAFE; 
   box-shadow: 0px 1px 3px 1px rgba(95, 99, 104, 0.25);
-	width: 30%;
+  width: 30%;
 }
 #contact-me {
   padding: 10px 20px;
@@ -49,7 +51,7 @@ h1, h2, h3, h5 {
   cursor: pointer;
   font-size: 16px;
   color: #FAFAFE;
-  background-color: #0049E6; /* Adjust color as needed */
+  background-color: #0049E6; 
   margin: auto;
   box-shadow: 0px 1px 3px 1px rgba(95, 99, 104, 0.25);
 }
@@ -59,7 +61,6 @@ h1, h2, h3, h5 {
   margin: auto;
   position: relative;
 }
-
 .img-txt {
   position: absolute;
   width: 80%;
@@ -92,9 +93,9 @@ body {
   width: 100%;
   background-size: 300% 300%;
   background-image: linear-gradient(-45deg, #0A0A0A 0%, #540051 25%, #8E0089 50%, #E600DF 100%);
-  -webkit-animation: AnimateBG 20s ease infinite;
+ animation: AnimateBG 20s ease infinite;
 }
-@-webkit-keyframes AnimateBG {
+@keyframes AnimateBG {
   0% {
     background-position: 0% 50%;
   }
@@ -115,22 +116,49 @@ body {
   padding: 16px;
   box-shadow: 0px 2px 5px 2px rgba(95, 99, 104, 0.25);
 }
-
-
-#projects-page .lbl-txt {position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); color: #FAFAFE; text-align:center; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+#projects-page .lbl-txt {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FAFAFE;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+@media(max-width: 800px) {
+  .nav {
+    flex-direction: column;
 
-@media(max-width: 600px) {
-	.nav{
-		flex-direction: column;
-		width: 95%;
-		margin-bottom: 10%;
-		margin-top: 10%;
-		background-color: aqua;/* This code is for testing */
-		align-items: center;
-		font-size: 2vw;
-	}
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  .nav > .btn {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2vw;
+    color: #0A0A0A;
+    background-color: #FAFAFE;
+    margin: 0;
+    box-shadow: 0px 1px 3px 1px rgba(95, 99, 104, 0.25);
+    width: 100%;
+  }
+  #proj-lightbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    width: 95%;
+    align-items: flex-start;
+  }
+  .menu-proj {
+    flex-direction: row;
+  }
 }
-	
-	
-
